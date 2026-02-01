@@ -3,8 +3,8 @@ from datetime import date
 
 # Esta clase busca mantener los principios de la arquitectura limpia donde se mantiene una independencia entre
 # los distintos componentes del sistema.
-# Aqu[i se declaran las variables cables del mercado de valores.
-
+# Aqui se delcaran las variable pertenecientes a la vela (OHLCV)
+@dataclass(frozen=true)
 class market_data:
     date: date
     open: float
